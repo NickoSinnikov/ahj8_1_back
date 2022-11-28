@@ -1,0 +1,19 @@
+{
+  "name": "ahj8_1_back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "forever --minUptime 1000 --spinSleepTime 1000 index.js",
+    "watch": "forever --minUptime 1000 --spinSleepTime 1000 -w index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "forever": "^4.0.3",
+    "koa": "^2.13.4",
+    "koa-body": "^6.0.1",
+    "koa2-cors": "^2.0.6"
+  }
+}
